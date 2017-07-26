@@ -1,0 +1,32 @@
+  if ip22=="p"or ip22=="P":
+        ip22="+ve"
+    else:
+        ip22="-ve"
+    print("Donor Bood Group","[",ip11,ip22,"]")
+    if ip11=="A" and ip22=="+ve":
+        compatiblelist=["A+ve","O+ve","O-ve"]
+        print("-------Compatible list---------","\n",compatiblelist,"\n","-------------------------------")
+        
+    
+def demotry(ipdemo):
+    list1=["A","O","B","AB"]
+    list2=["+ve","-ve"]
+    print (list1)
+    print (list2)
+    print("---demo input---")
+    print("first input : A")
+    print("Second input: +ve")
+    print("------------------")
+def returninput(ipdemo,ip1,ip2):
+    ip11=ip1
+    ip22=ip2
+    if ip1=="A" and ip2=="P":
+        Apositive(ip11,ip22)
+       
+    
+
+ipdemo=input("Enter any number or string")
+demotry(ipdemo)
+ip1=input("select blood group(A,O,B,AB)")
+ip2=input("Potive or Negative(P/N)")
+returninput(ipdemo,ip1,ip2)
